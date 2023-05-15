@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Система управления "Личный кабинет"</title>
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/LoginPage.css">
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="center">
+                <h1>Sign Up</h1>
+                <form action="/php/registrate.php" method="post" id="form">
+                    <div class="txt_field">
+                        <input type="text" name="fio" required></input>
+                        <span></span>
+                        <label>ФИО</label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="radio" name="select-1" id="option-1" value="prepod" checked>
+                        <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                            <span>Преподаватель</span>
+                        </label>
+                        <input type="radio" name="select-1" id="option-2" value="stud">
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                            <span>Студент</span>
+                        </label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="email" name="mail" required></input>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" name="pass" required></input>
+                        <span></span>
+                        <label>Пароль</label>
+                    </div>
+                    <input type="submit" value="Зарегистрироваться"></input>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
